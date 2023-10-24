@@ -3,12 +3,18 @@ import Link from 'next/link'
 import WalletLoader from 'components/WalletLoader'
 import {useSigningClient} from 'contexts/client'
 
+
+
+
 const Home: NextPage = () => {
   const {walletAddress} = useSigningClient()
 
   return (
     <WalletLoader>
+
+
       <h1 className="text-6xl font-bold">
+ 
         Welcome to {process.env.NEXT_PUBLIC_CHAIN_NAME} !
       </h1>
 
