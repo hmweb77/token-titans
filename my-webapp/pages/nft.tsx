@@ -162,13 +162,13 @@ const NFT: NextPage = () => {
       {transferID == "" && !classCreated && (
         <div>
           <h1 className="text-3xl font-bold my-8">
-            Create your {nftClassSymbol} NFT class
+            Create your {nftClassSymbol} Community
           </h1>
           <div className="flex w-full max-w-xl">
             <input
               type="text"
               id="description"
-              className="input input-bordered focus:input-primary input-lg rounded-full flex-grow font-mono text-center text-lg"
+              className="input input-bordered bg-white input-lg rounded-full flex-grow font-mono text-center text-lg"
               placeholder={`Class description`}
               onChange={(event) => setNFTClassDescription(event.target.value)}
               value={nftClassDescription}
