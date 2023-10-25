@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const { Client, Bank, FT } = require("coreum-js");
+const str2ab = require('str2ab');
+
 
 
 router.get("/", (req, res, next) => {
@@ -8,14 +10,15 @@ router.get("/", (req, res, next) => {
 });
 
 
-router.post('/new-user', async (req, res, next) => {
-  const {userAddress} = req;
+router.post('/create-profile', async (req, res, next) => {
+
+  try {
+  const {userAddress, username} = req.body;
 
 // If you are using a mnemonic from this tutorial you should provide another subunit and symbol,
 // since tokens within one account should be unique.
 const subunit = "tokentitans"
 const symbol =  "TTD"
-
 
 // We need another address to send tokens to. You can replace it with your own:
 const receiver = userAddress;
@@ -23,7 +26,7 @@ const receiver = userAddress;
 // INIT SECTION
 
         // Init the client and target the testnet network:
-        const coreum = new Client({ network:  network}); // Other values are "devnet" and "mainnet"
+        const coreum = new Client({ network:  "testnet"}); // Other values are "devnet" and "mainnet"
         const issuerMnemonic ="spend build hurdle notable lemon involve summer pudding sadness fit excite canyon flock relief unfold upgrade sure film alley chest census quiz ivory birth";
 
 
@@ -60,9 +63,36 @@ const receiver = userAddress;
         console.log("bankSendBroadcastResponse: ", bankSendBroadcastResponse);
 
         // Let's check the receiver's balance. You should see your tokens there:
-        const receiverBalances = await bank.allBalances(receiver);
+        const receiverBalances = await bank.allBalances(userAddress);
         console.log(`receiverBalances: `, receiverBalances);
-        res.json(`5 Tokens were sent to ${receiver}. Your Balance of TTD tokens is now ${receiverBalances}`);
+
+        const exec_msg = {create_profile : {username}};
+
+// here we replace "receive_airdrop" with our function name and pass the respective arguments in the {} if necessary 
+
+    console.log("execution message:", exec_msg)
+
+    const msg_8uintArray = str2ab(JSON.stringify(exec_msg));
+
+      const call_contract = CosmWasm.ExecuteContract({
+        sender: userAddress,
+        contract,
+        funds: [],
+        msg: msg_8uintArray,
+      });
+
+      console.log("calling contract fn here:", call_contract)
+
+      const contractBroadcastResponse = await coreum.sendTx([call_contract]);
+      
+      console.log("broadcast response:", contractBroadcastResponse);
+
+
+    res.status(200).json({ contractBroadcastResponse: contractBroadcastResponse, Message: `5 Tokens were sent to ${receiver}. Your Balance of TTD tokens is now ${receiverBalances}`})
+
+  } catch(err){
+    console.log("error occured in backend", err);
+  }
     })
 
 module.exports = router;
