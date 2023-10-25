@@ -1,6 +1,6 @@
 {
     "routes": [
 
-        { "source": "/pages", "dest": "/" }
+        { "src": "/pages", "dest": "/" }
       ]
 }
