@@ -1,10 +1,16 @@
-import {useSigningClient} from 'contexts/client'
+import { useSigningClient } from 'contexts/client'
 import Link from 'next/link'
 import Image from 'next/image'
 import Router from 'next/router'
+import Logo from "../assets/Logo PNG.png"
+import MarketPlace from "../assets/Marketplace-Icon.png"
+import Community from "../assets/Community-Icon.png"
+import Prof from "../assets/pfp.jpg"
+import Home from "../assets/Home-Icon.png"
+
 
 function Nav() {
-  const {walletAddress, connectWallet, disconnect} = useSigningClient()
+  const { walletAddress, connectWallet, disconnect } = useSigningClient()
   const handleConnect = () => {
     if (walletAddress.length === 0) {
       connectWallet()
@@ -14,43 +20,87 @@ function Nav() {
     }
   }
 
-  const PUBLIC_SITE_ICON_URL = process.env.NEXT_PUBLIC_SITE_ICON_URL || ''
+
 
   return (
-    <div className="border-b w-screen px-2 md:px-16">
-      <nav
-        className="flex flex-wrap text-center md:text-left md:flex flex-row w-full justify-between items-center py-4 ">
+    <div className="border-b w-screen px-2 md:px-16 bg-primary">
+      <nav className="flex flex-wrap text-center md:text-left md:flex flex-row w-full justify-between items-center py-4">
         <div className="flex items-center">
           <Link href="/">
             <a>
-              {PUBLIC_SITE_ICON_URL.length > 0 ? (
-                <Image
-                  src={PUBLIC_SITE_ICON_URL}
-                  height={32}
-                  width={32}
-                  alt="Logo"
-                />
-              ) : (
-                <span className="text-2xl">⚛️ </span>
-              )}
+              <Image
+                src={Logo}
+                height={64}
+                width={64}
+                alt="Logo"
+              />
             </a>
           </Link>
           <Link href="/">
-            <a className="ml-1 md:ml-2 link link-hover font-semibold text-xl md:text-2xl align-top">
-              {process.env.NEXT_PUBLIC_SITE_TITLE}
+            <a className="ml-1 md:ml-2 font-semibold text-xl md:text-2xl align-top">
+              TOKEN TITANS
             </a>
           </Link>
         </div>
         <div className="flex flex-grow lg:flex-grow-0 max-w-full">
+          {walletAddress ? (
+            // Render content when the user is connected
+            <div>
+              {/* Add your profile icon or other icons here */}
+             
+              <button className="btn btn-outline btn-secondary  m-3">
+                <Image
+                  src={MarketPlace}
+                  height={32}
+                  width={32}
+                  alt="home-page-image"
+          
+                /></button>
+             
+              <button className="btn btn-outline btn-secondary  m-3">
+              <Image
+                src={Community}
+                height={32}
+                width={32}
+                alt="home-page-image"
+       
+              />
+            </button>
+              <button className="btn btn-outline btn-secondary  m-3">
+              <Image
+                src={Home}
+                height={32}
+                width={32}
+                alt="home-page-image"
+           
+              />
+            </button>
+             <Link href="/profile">
+            <button className="btn btn-outline btn-secondary  m-3">
+              <Image
+                src={Prof}
+                height={32}
+                width={32}
+                alt="home-page-image"
+              />
+            </button>
+            </Link>
+              {/* Add other icons as needed */}
+        </div>
+        ) : (
+        // Render the "Connect Wallet" button when user is not connected
+        <div className="flex flex-grow lg:flex-grow-0 max-w-full">
           <button
-            className="block btn btn-outline btn-primary w-full max-w-full truncate"
+            className="btn btn-outline btn-secondary bg-base-100"
             onClick={handleConnect}
           >
-            {walletAddress || 'Connect Wallet'}
+            Connect Wallet
           </button>
         </div>
-      </nav>
+          )}
     </div>
+      </nav >
+    </div >
   )
 }
 

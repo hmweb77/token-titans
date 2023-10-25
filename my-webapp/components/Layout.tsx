@@ -12,10 +12,11 @@ export default function Layout({children}: { children: ReactNode }) {
       </Head>
 
       <Nav/>
-      <main className="flex flex-col items-center justify-center w-full flex-1 p-2 md:px-20 text-center">
+   
+      <main className="flex flex-col items-center justify-center w-full flex-1 p-2 md:px-20 text-center bg-gradient-to-b from-primary via-white to-white">
         {children}
       </main>
-      <footer className="flex items-center justify-center w-full h-24 border-t">
+      {/* <footer className="flex items-center justify-center w-full h-24 border-t">
         <a
           target="_blank" rel="noreferrer" href={process.env.NEXT_PUBLIC_CHAIN_EXPLORER || ""}
           className="pl-1 link link-primary link-hover"
@@ -43,7 +44,7 @@ export default function Layout({children}: { children: ReactNode }) {
         >
           Keplr App
         </a>
-      </footer>
+      </footer> */}
     </div>
   )
 }

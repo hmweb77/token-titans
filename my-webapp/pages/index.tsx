@@ -3,12 +3,18 @@ import Link from 'next/link'
 import WalletLoader from 'components/WalletLoader'
 import {useSigningClient} from 'contexts/client'
 
+
+
+
 const Home: NextPage = () => {
   const {walletAddress} = useSigningClient()
 
   return (
     <WalletLoader>
+
+
       <h1 className="text-6xl font-bold">
+ 
         Welcome to {process.env.NEXT_PUBLIC_CHAIN_NAME} !
       </h1>
 
@@ -48,6 +54,15 @@ const Home: NextPage = () => {
             <h3 className="text-2xl font-bold">NFT &rarr;</h3>
             <p className="mt-4 text-xl">
               Create you NFT class and mint NFTs for it.
+            </p>
+          </a>
+        </Link>
+        <Link href="/profile" passHref>
+          <a
+            className="p-6 mt-6 text-left border border-secondary hover:border-primary w-96 rounded-xl hover:text-primary focus:text-primary-focus">
+            <h3 className="text-2xl font-bold">Profile &rarr;</h3>
+            <p className="mt-4 text-xl">
+              Profile
             </p>
           </a>
         </Link>

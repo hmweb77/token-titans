@@ -1,11 +1,13 @@
-import {ReactNode} from 'react'
-import {useSigningClient} from 'contexts/client'
+import { ReactNode } from 'react'
+import Image from 'next/image'
+import { useSigningClient } from 'contexts/client'
 import Loader from './Loader'
+import homePageImage from "../assets/Home.jpeg"
 
 function WalletLoader({
-                        children,
-                        loading = false,
-                      }: {
+  children,
+  loading = false,
+}: {
   children: ReactNode
   loading?: boolean
 }) {
@@ -19,7 +21,7 @@ function WalletLoader({
   if (loading || clientLoading) {
     return (
       <div className="justify-center">
-        <Loader/>
+        <Loader />
       </div>
     )
   }
@@ -27,26 +29,12 @@ function WalletLoader({
   if (walletAddress === '') {
     return (
       <div className="max-w-full">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="link link-primary link-hover" href="https://coreum.com/">
-            Coreum!
-          </a>
+        <h1 className=" m-3 text-6xl font-bold">
+          Where users <span className='text-white'>Lead</span> the way
         </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by installing{' '}
-          <a
-            className="pl-1 link link-primary link-hover"
-            href="https://keplr.app/"
-          >
-            Keplr wallet
-          </a>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around md:max-w-4xl mt-6 sm:w-full">
+        <div className="flex flex-wrap items-center justify-around md:max-w-4xl mt-3 mb-10 sm:w-full">
           <button
-            className="p-6 mt-6 text-left border border-secondary hover:border-primary w-96 rounded-xl hover:text-primary focus:text-primary-focus"
+            className="p-6 mt-6 text-left border border-secondary hover:border-primary-focus w-96 rounded-xl hover:text-primary-focus focus:text-primary"
             onClick={connectWallet}
           >
             <h3 className="text-2xl font-bold">Connect your wallet &rarr;</h3>
@@ -55,6 +43,13 @@ function WalletLoader({
             </p>
           </button>
         </div>
+        <Image
+          src={homePageImage}
+          height={320}
+          width={320}
+          alt="home-page-image"
+          className="m-3" 
+        />
       </div>
     )
   }
