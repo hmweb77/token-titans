@@ -29,7 +29,7 @@ const Home: NextPage = () => {
 
       </div>
 
-      <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 max-w-full sm:w-full">
+      <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
         <Link href="https://docs.coreum.dev/tools-ecosystem/faucet.html" passHref>
           <a target="_blank" rel="noreferrer"
              className="p-6 mt-6 text-left border border-secondary hover:border-primary w-96 rounded-xl hover:text-primary focus:text-primary-focus">
