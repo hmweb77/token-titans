@@ -1,7 +1,6 @@
 {
     "routes": [
 
-        { "source": "/pages", "dest": "/" },
-        { "source": "/pages/profile", "dest": "/" }
+        { "source": "/pages", "dest": "/" }
       ]
 }
