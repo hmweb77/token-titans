@@ -36,7 +36,7 @@ Our dedicated team members include:
 <li><a href="https://twitter.com/smarturing">Miguel</a>: Manager/Scrum Master familiar with agile methodologies and frameworks.</li>
 <li><a href="https://github.com/paulfresnel">Paul</a>: A Digital Marketing Manager with over 5 years of exxperience, who recently transitionned to a full-stack web developer with a passion for Blockchain & crypto.</li>
 <li><a href="https://twitter.com/smarturing">Maria</a>: Web Designer and Graphic Designer, using UX methods for communications | Founder of Nh4utilus Creative Agency.</li>
-<li>Oussamahn: [Details not provided]</li>
+<li><a href="https://linkedin.com/in/oussamahamdani">Oussama</a>: Full stack Developer using MERN and TNT stack | <a href="https://www.hmwebs.com">my portfolio</a>.</li>
 
 # Deployed dApp
 
