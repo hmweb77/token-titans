@@ -1,0 +1,10 @@
+/Users/paulfresnel/Desktop/web3-projects/coreum/coreum-hackathon/token-titans/smart_contract/target/debug/deps/spki-3699586990b472e1.rmeta: /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.7.2/src/lib.rs /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.7.2/src/algorithm.rs /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.7.2/src/error.rs /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.7.2/src/spki.rs /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.7.2/src/traits.rs /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.7.2/src/../README.md
+
+/Users/paulfresnel/Desktop/web3-projects/coreum/coreum-hackathon/token-titans/smart_contract/target/debug/deps/spki-3699586990b472e1.d: /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.7.2/src/lib.rs /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.7.2/src/algorithm.rs /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.7.2/src/error.rs /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.7.2/src/spki.rs /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.7.2/src/traits.rs /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.7.2/src/../README.md
+
+/Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.7.2/src/lib.rs:
+/Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.7.2/src/algorithm.rs:
+/Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.7.2/src/error.rs:
+/Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.7.2/src/spki.rs:
+/Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.7.2/src/traits.rs:
+/Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spki-0.7.2/src/../README.md:
