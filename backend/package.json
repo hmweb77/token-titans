@@ -16,6 +16,7 @@
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.6.3",
-    "passport": "^0.6.0"
+    "passport": "^0.6.0",
+    "str2ab": "^1.2.1"
   }
 }
