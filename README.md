@@ -1,3 +1,5 @@
+<img src="blob:https://web.telegram.org/79c8e0ad-7224-4060-a3c3-4bb73825544e"/>
+
 # token-titans
 
 TokenTitans is a diverse and multi-disciplinary team dedicated to revolutionizing the SocialFi landscape. Our project combines a wide range of cultural backgrounds and expertise, enabling us to have a comprehensive perspective on the direction our project should take. We are committed to identifying the key features and functionalities that make SocialFi appealing, with a focus on returning power to content creators.
