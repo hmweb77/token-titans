@@ -1,4 +1,4 @@
-<img src="blob:https://web.telegram.org/79c8e0ad-7224-4060-a3c3-4bb73825544e"/>
+<img src="https://token-titans.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogo%20PNG.cfea0f72.png&w=128&q=75"/>
 
 # token-titans
 
