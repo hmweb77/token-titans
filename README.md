@@ -40,6 +40,8 @@ Our dedicated team members include:
 
 # Deployed dApp
 
+<img src="./my-webapp//assets//TokenTitans-Homepage.jpeg"/>
+
 Experience our innovative dApp by visiting <a href="https://token-titans.vercel.app/">TokenTitans</a>. We are proud to announce that our dApp is live on the Coreum Testnet network, ensuring reliability, performance and cheap costs for our users.
 
 TokenTitans is committed to empowering content creators in the SocialFi space, and we invite you to explore the possibilities of our platform.
