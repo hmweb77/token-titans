@@ -1,5 +1,7 @@
 {
-    "rewrites":[
-        {"source":"/(.*)","destination":"/"}
-    ]
+    "routes": [
+
+        { "pages": "/", "dest": "/" },
+        { "pages": "/profile", "dest": "/" }
+      ]
 }
