@@ -1,0 +1,10 @@
+/Users/paulfresnel/Desktop/web3-projects/coreum/coreum-hackathon/token-titans/smart_contract/target/debug/deps/pkcs8-8a6bd7739a92c165.rmeta: /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pkcs8-0.10.2/src/lib.rs /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pkcs8-0.10.2/src/error.rs /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pkcs8-0.10.2/src/private_key_info.rs /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pkcs8-0.10.2/src/traits.rs /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pkcs8-0.10.2/src/version.rs /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pkcs8-0.10.2/src/../README.md
+
+/Users/paulfresnel/Desktop/web3-projects/coreum/coreum-hackathon/token-titans/smart_contract/target/debug/deps/pkcs8-8a6bd7739a92c165.d: /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pkcs8-0.10.2/src/lib.rs /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pkcs8-0.10.2/src/error.rs /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pkcs8-0.10.2/src/private_key_info.rs /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pkcs8-0.10.2/src/traits.rs /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pkcs8-0.10.2/src/version.rs /Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pkcs8-0.10.2/src/../README.md
+
+/Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pkcs8-0.10.2/src/lib.rs:
+/Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pkcs8-0.10.2/src/error.rs:
+/Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pkcs8-0.10.2/src/private_key_info.rs:
+/Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pkcs8-0.10.2/src/traits.rs:
+/Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pkcs8-0.10.2/src/version.rs:
+/Users/paulfresnel/.cargo/registry/src/index.crates.io-6f17d22bba15001f/pkcs8-0.10.2/src/../README.md:
