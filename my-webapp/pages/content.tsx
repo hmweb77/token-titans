@@ -9,11 +9,11 @@ import SecondPost from "../assets/Content Assets/Post2.png"
 
 const Content = () => {
     return (
-        <div className="flex flex-col justify-center items-center w-9/12 h-screen bg-white">
+        <div className="flex flex-col justify-center items-center w-1200  bg-white">
             <CreateContent />
             <CommunityContent/>
-            <Image src={FirstPost} alt="Post" width={600} height={600}/>
-            <Image src={SecondPost} alt="Post" width={600} height={1900}/>
+            <Image src={FirstPost} alt="Post" width={700} height={150}/>
+            <Image src={SecondPost} alt="Post" width={700} height={450}/>
         </div>
     )
 }

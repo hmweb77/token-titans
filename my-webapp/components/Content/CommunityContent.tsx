@@ -5,9 +5,9 @@ import Com from "../../assets/Content Assets/Communities.png"
 
 const CommunityContent = () => {
   return (
-    <div className="flex w-10/12 items-center justify-center h-2/4 rounded-lg ">
+    <div className="flex items-center justify-center h-2/4 rounded-lg ">
     {/* First Section */}
-    <div className="w-2/3 p-2">
+    <div className="w-400 p-2">
       <h2 className="text-2xl text-primary-focus font-semibold mb-6">Your community</h2>
       <div className="flex justify-center">
         <Image
@@ -21,7 +21,7 @@ const CommunityContent = () => {
     </div>
   
     {/* Second Section */}
-    <div className="w-1/3 p-2">
+    <div className="w-400 p-2">
       <h2 className="text-2xl text-primary-focus font-semibold mb-6">New Communities</h2>
       <div className="flex justify-center">
         <Image
@@ -34,8 +34,6 @@ const CommunityContent = () => {
       </div>
     </div>
   </div>
-  
-
   );
 };
 
