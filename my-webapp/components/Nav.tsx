@@ -47,58 +47,59 @@ function Nav() {
             // Render content when the user is connected
             <div>
               {/* Add your profile icon or other icons here */}
-             
+
               <button className="btn btn-outline btn-secondary  m-3">
                 <Image
                   src={MarketPlace}
                   height={32}
                   width={32}
                   alt="home-page-image"
-          
+
                 /></button>
-             
+
               <button className="btn btn-outline btn-secondary  m-3">
-              <Image
-                src={Community}
-                height={32}
-                width={32}
-                alt="home-page-image"
-       
-              />
-            </button>
-              <button className="btn btn-outline btn-secondary  m-3">
-              <Image
-                src={Home}
-                height={32}
-                width={32}
-                alt="home-page-image"
-           
-              />
-            </button>
-             <Link href="/profile">
-            <button className="btn btn-outline btn-secondary  m-3">
-              <Image
-                src={Prof}
-                height={32}
-                width={32}
-                alt="home-page-image"
-              />
-            </button>
-            </Link>
+                <Image
+                  src={Community}
+                  height={32}
+                  width={32}
+                  alt="home-page-image"
+
+                />
+              </button>
+              <Link href="/content">
+                <button className="btn btn-outline btn-secondary  m-3">
+                  <Image
+                    src={Home}
+                    height={32}
+                    width={32}
+                    alt="home-page-image"
+                  />
+                </button>
+              </Link>
+              <Link href="/profile">
+                <button className="btn btn-outline btn-secondary  m-3">
+                  <Image
+                    src={Prof}
+                    height={32}
+                    width={32}
+                    alt="home-page-image"
+                  />
+                </button>
+              </Link>
               {/* Add other icons as needed */}
-        </div>
-        ) : (
-        // Render the "Connect Wallet" button when user is not connected
-        <div className="flex flex-grow lg:flex-grow-0 max-w-full">
-          <button
-            className="btn btn-outline btn-secondary bg-base-100"
-            onClick={handleConnect}
-          >
-            Connect Wallet
-          </button>
-        </div>
+            </div>
+          ) : (
+            // Render the "Connect Wallet" button when user is not connected
+            <div className="flex flex-grow lg:flex-grow-0 max-w-full">
+              <button
+                className="btn btn-outline btn-secondary bg-base-100"
+                onClick={handleConnect}
+              >
+                Connect Wallet
+              </button>
+            </div>
           )}
-    </div>
+        </div>
       </nav >
     </div >
   )

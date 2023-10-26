@@ -51,9 +51,9 @@ const Home: NextPage = () => {
         <Link href="/nft" passHref>
           <a
             className="p-6 mt-6 text-left border border-secondary hover:border-primary w-96 rounded-xl hover:text-primary focus:text-primary-focus">
-            <h3 className="text-2xl font-bold">NFT &rarr;</h3>
+            <h3 className="text-2xl font-bold">Create community &rarr;</h3>
             <p className="mt-4 text-xl">
-              Create you NFT class and mint NFTs for it.
+              Start meaningful connections that make a difference
             </p>
           </a>
         </Link>
