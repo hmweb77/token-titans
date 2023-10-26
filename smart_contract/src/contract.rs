@@ -1,7 +1,6 @@
 #![cfg_attr(not(feature = "library"), no_std)]
 mod helpers; // Import the helpers module
 extern crate alloc;
-use crate::helpers::{get_profiles, get_communities, get_posts, get_next_community_id, get_next_post_id};
 use alloc::string::String;
 use alloc::vec;
 use core::iter::Map;
